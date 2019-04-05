@@ -65,7 +65,7 @@
 
                             <li><a href="/admin">后台管理</a></li>
 
-                            <li><a href="/logout">退出</a></li>
+                            <li><a href="public/logout">退出</a></li>
                         </ul>
                     </li>
                 </ul>

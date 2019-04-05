@@ -20,7 +20,7 @@ public class LoginController {
     public Result Login(String username, String password){
        return _LoginService.Login(username,password);
     }
-    @RequestMapping("/public/logout")
+    @RequestMapping("home/public/logout")
     public Object Logout(HttpServletRequest request){
         request.getSession().removeAttribute("loginInfo");
         return "redirect:/login.html";

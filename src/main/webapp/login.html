@@ -129,10 +129,10 @@
                         }
                         alert(data.code);
                         if(data.code==200){
-                            layer.msg('恭喜，登录成功，2秒后为您跳转到个人中心!', {icon: 6});
+                            layer.msg('恭喜，即将登录成功，2秒后为您跳转到个人中心!', {icon: 6});
                             setTimeout(function(){
-                                alert("是不是执行到了这儿都是不知道的");
-                                window.location.href="a/index.html";
+
+                                window.location.href="home/index";
                             },2000);
                         }
                     },

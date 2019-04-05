@@ -88,58 +88,7 @@
 <!-- Login dialog END -->
 
 <!-- Header BEGIN -->
-<div class="top-wrap">
-    <nav class="navbar navbar-inverse" role="navigation">
-<!--[if lt IE 9]>
-<div class="alert alert-danger alert-dismissible fade in" role="alert" style="margin-bottom:0">
-      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-      <strong>您正在使用低版本浏览器，</strong> 在本页面的显示效果可能有差异。
-        建议您升级到
-        <a href="http://www.google.cn/intl/zh-CN/chrome/" target="_blank">Chrome</a>
-        或以下浏览器：
-        <a href="www.mozilla.org/en-US/firefox/‎" target="_blank">Firefox</a> /
-        <a href="http://www.apple.com.cn/safari/" target="_blank">Safari</a> /
-        <a href="http://www.opera.com/" target="_blank">Opera</a> /
-        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">Internet Explorer 9+</a>
-</div>
-<![endif]-->
-    	<div class="container">
-    		<div class="navbar-header">
-    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-    				<span class="sr-only">Toggle navigation</span>
-    				<span class="icon-bar"></span>
-    				<span class="icon-bar"></span>
-    				<span class="icon-bar"></span>
-    			</button>
-    			<a class="navbar-brand logo" href="/index"><img src="/assets/images/logo/logo_full.png"></a>
-    		</div>
-    		<include url="navbar.html"></include>
-    		<script type="text/javascript">
-    		$(function(){
-    			$('include').each(function(){
-    				$that = $(this);
-    				$.get($that.attr('url'),function(data){
-    					$that.before(data);
-    					$that.remove();
-    				});
-    			});
-    		});
-    		</script>
-    		
-    		
-    	</div>
-    </nav>
-</div>
-<script type="text/javascript">
-$(function () {
-	$('a[nav]').each(function(){  
-        $this = $(this);
-        if($this[0].href == String(window.location)){  
-            $this.closest('li').addClass("active");  
-        }  
-    });
-});
-</script>
+<#include "../home/inc/header.ftl">
 <!-- Header END -->
     <!--.site-main -->
     <div class="wrap" id="wrap">
@@ -292,7 +241,7 @@ $(function () {
                     <div class="col-xs-12 col-md-3 side-right hidden-xs hidden-sm">
 <div class="widget-box shadow-box">
 	<div class="title">
-		<h3><i class="fa fa-users "></i> 热门用户</h3>
+		<h3><i class="fa fa-users "></i> 重点用户</h3>
 	</div>
 	<ul id="hotuser" class="hotusers">
 
